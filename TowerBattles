@@ -4,8 +4,10 @@ repeat wait() until game:IsLoaded()
 if game.PlaceId == 45146873 then
 
 
-wait(1.75)
-while wait(1.75) do
+wait(1.25)
+workspace.SurvivalAnalysis:InvokeServer()
+wait(1)
+while wait(1.25) do
 local args = {
     [1] = "SurvivalSolo",
     [2] = 1
@@ -22,12 +24,12 @@ end
 
 
 else 
-wait(3)
+wait(2)
 local args = {
     [1] = "Map2"
 }
 
 workspace.Vote:InvokeServer(unpack(args))
-wait(3.5)
+wait(1.5)
 workspace.SkipWaitVote:InvokeServer()
 end
